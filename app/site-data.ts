@@ -16,13 +16,13 @@ export const companies = [
 ];
 
 export const services = [
-  "AI, Data & Cognitive Technologies",
-  "Enterprise Cybersecurity",
-  "Enterprise Application Development",
-  "Cloud & Infrastructure Modernization",
-  "Data Analytics & Business Intelligence",
-  "Quality Engineering",
-  "Managed IT Services",
-  "Digital Transformation & Smart Automation",
-  "Maintaining services",
+  { name: "AI, Data & Cognitive Technologies", description: "Turn data into intelligent products, sharper decisions, and scalable automation.", tools: ["Python", "Azure AI", "TensorFlow"] },
+  { name: "Enterprise Cybersecurity", description: "Protect systems, data, and access with security practices built for evolving risks.", tools: ["SIEM", "IAM", "Vulnerability scanning"] },
+  { name: "Enterprise Application Development", description: "Design and build reliable applications for customers, teams, and operations.", tools: ["React", "Node.js", ".NET"] },
+  { name: "Cloud & Infrastructure Modernization", description: "Modernize infrastructure for resilient, efficient, and flexible digital operations.", tools: ["AWS", "Azure", "Kubernetes"] },
+  { name: "Data Analytics & Business Intelligence", description: "Make complex data easier to understand, explore, and act on.", tools: ["Power BI", "Tableau", "SQL"] },
+  { name: "Quality Engineering", description: "Build quality into delivery with practical, repeatable testing across every release.", tools: ["Selenium", "Playwright", "Appium"] },
+  { name: "Managed IT Services", description: "Keep day-to-day technology dependable, supported, and ready for what comes next.", tools: ["ServiceNow", "Microsoft 365", "Remote monitoring"] },
+  { name: "Digital Transformation & Smart Automation", description: "Connect people, processes, and platforms to make work simpler and faster.", tools: ["Power Automate", "RPA", "IoT"] },
+  { name: "Maintaining services", description: "Sustain digital products with ongoing support, releases, and operational care.", tools: ["Monitoring", "Release management", "Incident response"] },
 ];

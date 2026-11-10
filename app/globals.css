@@ -90,13 +90,28 @@
 @media(min-width:741px) and (max-height:700px){.services-list li{min-height:70px;padding:14px 0;font-size:14px}.services-section .section-heading{margin-bottom:24px}}
 @media(max-width:740px){.services-list{grid-template-columns:1fr;gap:0}.services-list li{min-height:68px;font-size:15px;padding:16px 0}.services-section .section-heading{margin-bottom:20px}}
 
-.service-expertise-row{grid-template-columns:44px minmax(0,1fr) 30px;align-items:center}
-.service-expertise-row h3{margin:0}
-.expertise-more{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:0;border:0;border-bottom:1px solid currentColor;background:none;color:#171757;font:inherit;font-size:14px;font-weight:700;line-height:1.6;cursor:pointer}
-.expertise-more:hover{color:var(--purple)}
-.expertise-more .arrow-icon{width:17px;height:17px}
-.expertise-more:focus-visible{outline:2px solid var(--purple);outline-offset:5px}
-@media(max-width:460px){.service-expertise-row{grid-template-columns:30px minmax(0,1fr) 20px;gap:10px}.service-expertise-row h3{font-size:18px}}
+.services-layout{display:block}
+.services-intro{margin-bottom:22px;position:static}
+.services-intro h2{max-width:none;font-size:clamp(30px,3vw,44px)}
+.services-intro p{max-width:440px;margin-top:10px;font-size:14px;line-height:1.5}
+.service-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.service-card{min-height:268px;padding:22px;border:1px solid #ccd2e3;background:#fff;display:flex;flex-direction:column;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.service-card:hover{background:#f4f6ff;border-color:#9ba7cf;transform:translateY(-3px)}
+.service-card-number{font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--purple);font-variant-numeric:tabular-nums}
+.service-card h3{margin:30px 0 11px;color:#171757;font-size:20px;font-weight:600;line-height:1.2;letter-spacing:-.025em}
+.service-card>p{margin:0;color:#454b68;font-size:14px;line-height:1.5}
+.service-tools{margin-top:auto;padding-top:20px}
+.service-tools>span{display:block;margin-bottom:8px;color:#6b527a;font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.service-tools ul{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0;padding:0}
+.service-tools li{padding:4px 6px;border:1px solid #d4d9e8;color:#343957;font-size:10px;line-height:1.2}
+.services-more{display:inline-flex;margin-top:25px;padding:0;border:0;border-bottom:1px solid currentColor;background:transparent;color:#171757;font:inherit;font-size:14px;font-weight:700;line-height:1.6;cursor:pointer}
+.services-more:hover{color:var(--purple)}
+.services-more:focus-visible{outline:2px solid var(--purple);outline-offset:5px}
+html[data-theme="light"] .expertise-section{background:#f7f9ff}
+html[data-theme="light"] .service-card{background:#fff;border-color:#cfd6e8}
+html[data-theme="light"] .service-card:hover{background:#f1f4ff;border-color:#9ca9d0}
+@media(max-width:860px){.service-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-card{min-height:250px}}
+@media(max-width:560px){.services-intro{margin-bottom:18px}.service-card-grid{grid-template-columns:1fr}.service-card{min-height:240px;padding:20px}.service-card h3{font-size:19px;margin-top:26px}.service-card>p{font-size:13px}.service-tools li{font-size:9px}}
 
 /* Supplied Sarai emblem; ready for the generated motion asset. */
 .hero-visual.hero-logo-visual{background:transparent;border-radius:0;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;margin-left:0}
@@ -107,6 +122,7 @@
 .hero-metallic-icon{width:min(100%,440px);aspect-ratio:81/58;max-height:80%;position:relative}
 .hero-metallic-icon .metallic-paint:not([data-ready="true"]){background:url('/sarai-icon.svg') center/96% 96% no-repeat}
 @media(max-width:740px){.hero-metallic-icon{width:min(80%,320px);max-height:220px}}
+
 
 /* Full-bleed particle field replaces the earlier curved line pattern. */
 .hero-particles{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
