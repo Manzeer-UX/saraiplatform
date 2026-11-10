@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "colors": {
+    "primary": "#0D0D95",
+    "accent": "#661D77",
+    "ink": "#151529",
+    "paper": "#F8F8FC"
+  },
+  "layout": { "maxWidth": "1320px" },
+  "typography": { "family": "Segoe UI Variable, Segoe UI, Arial, sans-serif" }
+}
