@@ -14,3 +14,15 @@ export const companies = [
   { name: "BugRaptors", services: "Core quality assurance, quality engineering, next-generation testing, and testing consultation.", url: "https://www.bugraptors.com/" },
   { name: "Woosper", services: "Digital strategy, digital marketing analytics, lead generation, and content marketing.", url: "https://www.woosper.com/" },
 ];
+
+export const services = [
+  "AI, Data & Cognitive Technologies",
+  "Enterprise Cybersecurity",
+  "Enterprise Application Development",
+  "Cloud & Infrastructure Modernization",
+  "Data Analytics & Business Intelligence",
+  "Quality Engineering",
+  "Managed IT Services",
+  "Digital Transformation & Smart Automation",
+  "Maintaining services",
+];
